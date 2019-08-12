@@ -1,14 +1,24 @@
 ﻿// MODULE
 var weatherApp = angular.module('weatherApp', ['ngRoute', 'ngResource']);
 
+
+// ROUTING
 weatherApp.config(function ($routeProvider) {
 	$routeProvider
 		.when('/', {
 			templateUrl: 'pages/home.html',
-			controller: 'controller/homeController.js'
+			controller: 'homeController'
 		})
 		.when('/forecast', {
 			templateUrl: 'pages/forecast.html',
-			controller: 'controllers/forecastController.js'
+			controller: 'forecastController'
 		});
+});
+
+// SERVICES
+
+weatherApp.service('cityService', function () {
+
+	this.city = 'Bristol';
+
 });
