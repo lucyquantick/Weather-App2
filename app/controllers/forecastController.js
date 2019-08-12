@@ -17,6 +17,4 @@
 		return new Date(dt * 1000);
 	};
 
-	//$log.log($scope.weatherResult);
-
 }]);

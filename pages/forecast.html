@@ -1,19 +1,22 @@
 ﻿<p>
-	<a href="#!/">Back to search</a>
+	<a href="#!/"><i class="fa fa-angle-double-left"></i> Back to search</a>
 </p>
 
 
 Forecast for {{city}}
 <hr />
-Results	<a href="#!/forecast/2" ng-class=" { 'bg-primary' : results === '2' }">2</a> |
-<a href="#!/forecast/4" ng-class=" { 'bg-primary' : results === '4' }">4</a> |
-<a href="#!/forecast/6" ng-class=" { 'bg-primary' : results === '6' }">6</a> |
-<a href="#!/forecast/10" ng-class=" { 'bg-primary' : results === '10' }">10</a> |
+Results	<a href="#!/forecast/2" ng-class=" { 'bg-primary text-white' : results === '2' }">2</a> |
+<a href="#!/forecast/4" ng-class=" { 'bg-primary text-white' : results === '4' }">4</a> |
+<a href="#!/forecast/6" ng-class=" { 'bg-primary text-white' : results === '6' }">6</a> |
+<a href="#!/forecast/10" ng-class=" { 'bg-primary text-white' : results === '10' }">10</a> |
 <hr />
 <div ng-repeat="w in weatherResult.list">
 	<div class="row">
 		<div class="col-md-12">
-			<weather-report weather-list-item="w" convert-to-celsius="convertToCelsius(daytimeTemp)" convert-to-date="convertToDate(dt)" date-format="h:mm a MMM d, y"></weather-report>
+			<weather-report weather-list-item="w" convert-to-celsius="convertToCelsius(daytimeTemp)" 
+											convert-to-date="convertToDate(dt)" date-format="h:mm a MMM d, y">
+
+			</weather-report>
 
 		</div>
 	</div>
