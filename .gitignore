@@ -1,4 +1,5 @@
-﻿.csproj
-.dll
-.pdb
-.cache
+﻿*.csproj
+*.csproj.user
+*.dll
+*.pdb
+*.cache
