@@ -2,7 +2,7 @@
 
 	$scope.city = cityService.city;
 
-	$scope.results = $routeParams.results || 6;
+	$scope.results = $routeParams.results || '6';
 
 	$scope.weatherAPI = $resource("https://api.openweathermap.org/data/2.5/forecast",
 		{ get: { method: "JSONP" } });

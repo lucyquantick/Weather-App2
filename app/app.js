@@ -13,7 +13,7 @@ weatherApp.config(function ($routeProvider) {
 			templateUrl: 'pages/forecast.html',
 			controller: 'forecastController'
 		})
-		.when('/forecast/:days', {
+		.when('/forecast/:results', {
 			templateUrl: 'pages/forecast.html',
 			controller: 'forecastController'
 		});
